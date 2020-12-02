@@ -23,9 +23,13 @@ class Row extends Component {
             movieTrailer(movie?.name || movie?.title || movie?.original_name || "")
             .then(url => {
                 const urlParams = new URLSearchParams(new URL(url).search)
-                this.setState({
-                    trailerURL: urlParams.get('v')
-                })
+                if (this.state.trailerURL === urlParams.get('v') ){
+                    this.setState({ trailerURL: ""})
+                } else {
+                    this.setState({
+                        trailerURL: urlParams.get('v')
+                    })
+                }
             })
             .catch(err => {
                 console.log(err)

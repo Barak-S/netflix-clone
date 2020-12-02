@@ -24,8 +24,8 @@ class Row extends Component {
                             <div className="movie-card">
                                 {/* <p>{movie.title || movie.name}</p> */}
                                 <img 
-                                    className="movie-poster" 
-                                    src={`${this.posterURL}${movie.poster_path}`} 
+                                    className={`movie-poster ${this.props.isLargeRow && "movie-posterLarge"}`}
+                                    src={`${this.posterURL}${this.props.isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
                                     key={movie.id} 
                                     alt={movie.title || movie.name}>
                                 </img>

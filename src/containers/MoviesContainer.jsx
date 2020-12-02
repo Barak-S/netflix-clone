@@ -17,10 +17,31 @@ const MoviesContainer=()=>{
                 fetchURL={Requests.fetchNetflixOriginals}
             />
             <Row
-                title="Top Rated"
-                key="top rated"
-                fetchURL={Requests.fetchTopRated}
+                title="Action Movies"
+                key="action movies"
+                fetchURL={Requests.fetchAction}
             />
+            <Row
+                title="Comedy Movies"
+                key="comedy movies"
+                fetchURL={Requests.fetchComedy}
+            />
+            <Row
+                title="Horror Movies"
+                key="horror movies"
+                fetchURL={Requests.fetchHorror}
+            />
+            <Row
+                title="Romance Movies"
+                key="romance movies"
+                fetchURL={Requests.fetchRomance}
+            />
+            <Row
+                title="Documentaries"
+                key="documentaries"
+                fetchURL={Requests.fetchDocumentaries}
+            />
+           
         </div>
     );
 }

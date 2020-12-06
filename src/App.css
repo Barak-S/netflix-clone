@@ -97,3 +97,33 @@ div.banner-fade-bottom{
   height: 7.4rem;
   background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61), #111);
 }
+
+.nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 60px;
+  z-index: 1;
+  -webkit-transition: ease-in !important;
+  transition: all 0.5s;
+}
+
+.nav-black{
+  background-color: #111;
+}
+
+.nav-logo{
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  object-fit: contain;
+}
+.nav-avatar{
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
